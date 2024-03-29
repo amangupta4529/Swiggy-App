@@ -1,0 +1,19 @@
+.carousel{
+    display: flex;
+    height: 200px;
+    margin-top: 10px;
+    background-color: white;
+    overflow-x: scroll;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.carousel-item{
+    height: 100%;
+    width: 200px;
+}
+.carousel-img{
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}

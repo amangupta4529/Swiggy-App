@@ -1,0 +1,58 @@
+.rest-info{
+    display: flex;
+}
+.rest-page-center{
+    width: 70%;
+    margin: auto;
+}
+.rest-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.rating-part{
+    font-size: small;
+    border: 1px solid rgb(211, 204, 204);
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+}
+.rest-rating{
+    text-align: center;
+    color: green;
+    font-weight: 900;
+    padding: 10px 10px 15px 10px;
+
+}
+.rest-total-rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 10px 10px 10px;
+
+}
+.rating-sep{
+    width: 70%;
+    margin: auto;
+}
+.rest-food-type{
+    margin-top: 15px;
+}
+.rest-menu-part{
+    margin-top: 100px;
+}
+.rest-food-type, .rest-location, .dilevery-time{
+    font-size: small;
+    color: grey;
+    line-height: 20px;
+}
+.dilevery-time img{
+    height: 15px; 
+}
+.dilevery-time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

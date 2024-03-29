@@ -1,0 +1,22 @@
+.accordian-box{
+    width: 100%;
+    border-bottom:  26px solid #f1f1f6;
+    padding: 10px;
+}
+
+.accordian-item-head{
+    font-weight: 700;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.accordian-item-head, .accordian-item-body{
+    width: 100%;
+}
+.collapse-accordian-btn{
+    background-color: transparent;
+    border: 0;
+    font-size: 25px;
+}

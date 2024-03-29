@@ -1,0 +1,13 @@
+.Manage-item-quantity-btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.Manage-item-quantity-btn-box button{
+    border: 0;
+    height: 100%;
+    width:33%;
+}

@@ -1,0 +1,15 @@
+.Cart-info-bar{
+    width: 70%;
+    height: 40px;
+    background-color: rgb(102, 224, 102);
+    position: fixed;
+    bottom: 0px;
+}
+.Cart-info-bar-box{
+    display: flex;
+    height: 100%;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}

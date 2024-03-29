@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia", sans-serif;
+}
+body{
+    background-color: white;
+} 
+.root{
+    width: 100vw;
+}
+.seprator{
+    width: 100%;
+    top: 80px;
+    left: 0px;
+    position: absolute;
+}
+button{
+    cursor: pointer;
+}

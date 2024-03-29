@@ -1,0 +1,45 @@
+.invoice{
+    position: fixed;
+    top:100px;
+    left: 75%;
+    width: 23%;
+    background-color: aliceblue;
+    padding: 20px 10px;
+}
+.invoice-rest-info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.invoice-rest-img{
+    height: 60px;
+    width: 60px;
+}
+.invoice-rest-info-right{
+    margin-left: 20px;
+}
+.invoice-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.invoice-item-name{
+    white-space: initial;
+    width: 180px;
+    margin-top: 2px;
+}
+.invoice-items-list{
+    margin-top: 10px;
+}
+.invoice-item-price, .invoice-items-total-price{
+    text-align: start;
+    width: 120px;
+}
+.invoice-items-list, .invoice-items-total-price-box{
+    font-size: small;
+}
+.invoice-items-total-price-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}

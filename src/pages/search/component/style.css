@@ -1,0 +1,22 @@
+.search-result-box{
+    display: flex;
+    width: 50%;
+
+}
+.search-result-img{
+    height: 70px;
+    border-radius: 5px;
+}
+.search-result-box-container{
+    margin-top: 20px;
+
+}
+.search-result-box-container:hover{
+    background-color: rgb(235, 238, 247);
+    cursor: pointer;
+
+}
+.search-result-box-content{
+    margin-left: 20px;
+    font-size: small;
+}
