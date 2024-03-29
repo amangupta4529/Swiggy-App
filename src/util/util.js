@@ -4,8 +4,7 @@ const getGeoLocation=()=>{
   const GeoLoactionPromise = new Promise((resolve, reject)=>{
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position)=>{
-          // const location = { "latitude" : position.coords.latitude, "longitude":position.coords.longitude}
-          const location = { "latitude" : 23.2599333, "longitude":77.412615}
+          const location = { "latitude" : position.coords.latitude, "longitude":position.coords.longitude}
           resolve(location) 
       })
       } else { 
@@ -19,13 +18,15 @@ const getGeoLocation=()=>{
 const getLocationInfo=async({latitude, longitude})=>{
     let url = LOCATION_URL.replace("{LAT}", latitude)
     url = url.replace("{LONG}", longitude)
-    console.log(url);
-    const res = await fetch(url,{
-      credentials: "same-origin"
-
-    })
-    const data = await res.json()
-    return data
+    try {
+      const res = await fetch(url,{
+        credentials: "same-origin"
+      })
+      const data = await res.json()
+      return data
+    } catch (error) {
+      console.error(error)
+    }
 }
 
 const modifyURL=(url,lat,lng)=>{

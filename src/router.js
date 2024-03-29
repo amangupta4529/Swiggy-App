@@ -6,7 +6,8 @@ import Offers from "./pages/Offers/Offers";
 import { Suspense, lazy } from "react";
 import App from "./App";
 import Search from "./pages/search/Search";
-const CartPage = lazy(()=>import("./pages/cart/Cart"))
+import Spinner from "./components/Spinner/Spinner";
+const CartPage = lazy(()=>import("./pages/cart/Cart"))    //Just Used for learning purpose
 
 export default router = createBrowserRouter([
     {
@@ -24,7 +25,7 @@ export default router = createBrowserRouter([
         },
         {
           path: "/cart",
-          element:  <Suspense fallback={<Error/>}><CartPage /></Suspense>,
+          element:  <Suspense fallback={<Spinner/>}><CartPage /></Suspense>,    
         },
         {
           path:"offers",

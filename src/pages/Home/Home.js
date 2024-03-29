@@ -10,12 +10,13 @@ import { useFetch } from '../../hooks/useFetch';
 import RestauranList from '../../components/RestaurantList/RestauranList';
 import { modifyURL } from '../../util/util';
 import { HOME_URL } from '../../const/const';
+import Spinner from '../../components/Spinner/Spinner';
 export default function Home() {
   const location = useSelector((store) => store.location.location)
   const home_url = modifyURL(HOME_URL, location.data[0].geometry.location.lat, location.data[0].geometry.location.lng)
   const [res, loading, error] = useFetch(home_url)
   const [restList, setRestList] = useState([])
-
+  if(loading)return <Spinner />
   if (!res) return
   const RowCarousel = ({carouselItems}) => {
     if (!carouselItems) return
@@ -35,7 +36,7 @@ export default function Home() {
   // const resCard = res?.cards;
   // const carouselItems = resCard[0]?.card?.card?.imageGridCards?.info
 
-
+  
   return (
     <div className='home_page'>
       <div className="content-center">

@@ -13,8 +13,8 @@ const dispatch = useDispatch()
   const handleLocation=()=>{
     getGeoLocation().then((location)=>{
       const data = getLocationInfo(location)
+      console.log("data=", data);
       data.then((res)=>dispatch(updateLocation(res)))
-
     }).catch((err)=>console.log(err))
   }
 

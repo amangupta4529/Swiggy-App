@@ -12,12 +12,15 @@ const useFetch=(link)=>{
             credentials: "same-origin"
         })
         .then(res=>res.json())
-        .then(res=>setdata(res))
-        .catch((err)=>{
-            console.error(err)
-            setError(err)
+        .then(res=>{
+            setdata(res)
+            setLoading(false);
         })
-        setLoading(false);
+        .catch((err)=>{
+            setError(err)
+            setLoading(false);
+
+        })
     }
     useEffect(()=>{
         fetchdata()

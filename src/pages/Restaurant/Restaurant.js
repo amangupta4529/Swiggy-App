@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Accordian from "./component/Accordian/Accordian";
 import { modifyURL } from "../../util/util";
 import CartInfoBar from "../../components/CartInfoBar/CartInfoBar";
-// import { useFetch } from "../hooks/usefetch";
+import Spinner from "../../components/Spinner/Spinner";
 
 
 const Restaurant = ()=>{
@@ -38,7 +38,6 @@ const Restaurant = ()=>{
         data?.data?.cards?.forEach((card)=>{ 
             if(card?.groupedCard?.cardGroupMap?.REGULAR?.cards){
                 setRestMenuCategories(card?.groupedCard?.cardGroupMap?.REGULAR?.cards)
-                console.log("called");
             }});
    },[data])
    const addToCart = (dishObj, setitemQuantity) => {
@@ -57,7 +56,9 @@ const Restaurant = ()=>{
     setitemQuantity(1)
     dispatch(addItem(dishObj))
 }
-   
+   if(loading)return <Spinner />
+
+
     return (
         <div className="rest-page">
             <div className="rest-page-center">

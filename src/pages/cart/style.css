@@ -66,3 +66,8 @@
     font-size: small;
     color: rgb(161, 157, 157);
 }
+.empty-cart{
+    text-align: center;
+    font-size: large;
+    margin-top: 7%;
+}

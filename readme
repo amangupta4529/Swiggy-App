@@ -1,5 +1,7 @@
 This Is a clone of Swiggy food App Web Version.
 It is build using React js, Javascript, Redux toolkit, HTML and CSS
 
+To bypass Cors Error Please use Any browser extension like https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf 
+
 
 Demo - https://www.loom.com/share/3e702cdf367542e8955a33d8becf9a80?sid=572b84d8-7ec0-4439-8327-83d4299c3df9

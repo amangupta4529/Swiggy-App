@@ -9,7 +9,7 @@ export default function Cart() {
   const cartItems = useSelector((store) => store.cart.cartItems)
   console.log(cartItems);
   const dispatch = useDispatch();
-  if (cartItems.length === 0) return <div>Your cart is Empty</div>
+  if (cartItems.length === 0) return <div className='empty-cart'>Your cart is Empty</div>
   // window.scrollTo(0,0)
   return (
     <div className='cart-page'>

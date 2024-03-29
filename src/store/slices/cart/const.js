@@ -5,7 +5,8 @@ const restaurant = {
 }
 const defaultState = {
     restaurantInfo:restaurant,
-    cartItems:[]
+    cartItems:[],
+    loading:false
 }
 
 export {defaultState}

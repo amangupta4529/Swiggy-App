@@ -1,0 +1,18 @@
+
+.spinner {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    border: 14x solid white;
+    border-radius: 50%;
+    border-top: 12px solid grey;
+    width: 110px;
+    height: 110px;
+    animation: spinner 1s linear infinite;
+    margin: -110px 0 0 -110px;
+  }
+  
+  @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
